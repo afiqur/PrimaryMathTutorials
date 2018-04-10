@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.piash.primarytutorials">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainClasses.AddTutorialActivity"
+            android:label="Add New Tutorial"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainClasses.UpdateTutorialActivity"
+            android:label="Update Information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainClasses.ShowSingleDataActivity"
+            android:label="Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainClasses.ShowAllTutorialActivity"
+            android:label="List of Contents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Are you Admin ?"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainClasses.AllClassesActivity" />
+        <activity
+            android:name=".MainClasses.ShowSingleDataToUser"
+            android:label="Be Attentive"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.Class5"
+            android:label="Class 5 Maths"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.Class4"
+            android:label="Class 4 Maths"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.Class3"
+            android:label="Class 3 Maths"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.Class2"
+            android:label="Class 2 Maths"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.Class1"
+            android:label="Class 1 Maths"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs.AboutUsFragmentActivity"
+            android:label="About us"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

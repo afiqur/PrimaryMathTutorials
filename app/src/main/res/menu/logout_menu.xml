@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@mipmap/add_icon"
+        android:onClick="addActivity"
+        android:title="Add"
+        app:showAsAction="always"></item>
+
+    <item
+        android:icon="@mipmap/logout_icon"
+        android:onClick="logout"
+        android:title="Logout"
+        app:showAsAction="ifRoom" />
+
+</menu>

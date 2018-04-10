@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgr5"
+    tools:context="com.example.piash.primarytutorials.MainClasses.AddTutorialActivity">
+
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Enter Everything"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/tvSC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Select Class"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Select Class"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:textStyle="bold"
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:textStyle="bold"
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="3"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:textStyle="bold"
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="4"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:textStyle="bold"
+            android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="5"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <EditText
+        android:textStyle="bold"
+        android:id="@+id/classET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Enter Class Name"
+        android:textColor="@color/black"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/topicET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter Topic Name"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/urlET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="https://www.youtube.com/watch?v="
+        android:inputType="textWebEditText" />
+
+
+    <EditText
+        android:id="@+id/descriptionET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Enter Description"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/addBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/editClass"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:src="@mipmap/add_iconn"
+            android:text="Add" />
+
+        <ImageButton
+            android:id="@+id/buttonShow"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/buttonSubmit"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/view_icon"
+            android:text="Show All" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
